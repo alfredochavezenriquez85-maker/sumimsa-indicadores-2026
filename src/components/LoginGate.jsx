@@ -5,8 +5,8 @@ import BrandMark from './BrandMark.jsx'
 // (el sitio es estático en GitHub Pages): detiene visitas casuales, no es
 // seguridad de servidor. Las credenciales se validan contra un hash SHA-256
 // de "usuario|contraseña" para no dejarlas legibles en el bundle.
-const AUTH_KEY = 'sumimsa-auth'
-const AUTH_HASH = '02c56cfb6b09c4805d260b1ffc7cf820eb4329eba33208760a8bb8e92df863d8'
+const AUTH_KEY = 'sumimsa-indicadores-2026-auth'
+const AUTH_HASH = '1845bc934b4e65fbbb2a003620fe60666096b7c802437fe0c65b9fb0a11bd2fe'
 
 async function sha256Hex(text) {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text))
